@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://dbm6g7lsgnlor"]
+
+[ext_resource type="Shader" path="res://fragment_shaders/fragment_colorize.gdshader" id="1_dwa67"]
+[ext_resource type="Texture2D" uid="uid://hgs31wj17k8a" path="res://icon.svg" id="2_qt2qj"]
+[ext_resource type="Script" path="res://fragment_shaders/Sprite2D.cs" id="3_3lyog"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ql3gg"]
+shader = ExtResource("1_dwa67")
+shader_parameter/blue = 0.843249
+
+[node name="SceneFragment1" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_ql3gg")
+position = Vector2(62, 66)
+rotation = 6.84325
+texture = ExtResource("2_qt2qj")
+script = ExtResource("3_3lyog")
+Speed = 0.5
