@@ -12,6 +12,6 @@ shader_parameter/color2 = Vector3(1, 0.2, 0.2)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_1l27i")
-position = Vector2(409.859, 288.359)
-scale = Vector2(3.98657, 3.99438)
+position = Vector2(56.9297, 54.1797)
+scale = Vector2(0.657348, 0.653442)
 texture = ExtResource("2_u26xc")
