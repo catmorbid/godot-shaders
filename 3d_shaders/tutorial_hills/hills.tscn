@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://ysjxyhf0h7hs"]
 
-[ext_resource type="Shader" path="res://2d_shaders/mesh_shader_1.gdshader" id="1_rqoup"]
-[ext_resource type="Script" path="res://3d_shaders/HillsController.cs" id="2_bobce"]
+[ext_resource type="Shader" path="res://3d_shaders/tutorial_hills/mesh_shader_1.gdshader" id="1_rqoup"]
+[ext_resource type="Script" path="res://3d_shaders/tutorial_hills/HillsController.cs" id="2_bobce"]
 
 [sub_resource type="Gradient" id="Gradient_aacdm"]
 colors = PackedColorArray(0, 0, 0, 1, 0, 0.917647, 0, 1)

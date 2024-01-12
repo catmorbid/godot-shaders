@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://dbm6g7lsgnlor"]
 
-[ext_resource type="Shader" path="res://2d_shaders/fragment_colorize.gdshader" id="1_dwa67"]
+[ext_resource type="Shader" path="res://2d_shaders/sprite_colorize/fragment_colorize.gdshader" id="1_dwa67"]
 [ext_resource type="Texture2D" uid="uid://hgs31wj17k8a" path="res://icon.svg" id="2_qt2qj"]
-[ext_resource type="Script" path="res://2d_shaders/Sprite2D.cs" id="3_3lyog"]
+[ext_resource type="Script" path="res://2d_shaders/sprite_colorize/Sprite2D.cs" id="3_3lyog"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ql3gg"]
 shader = ExtResource("1_dwa67")
