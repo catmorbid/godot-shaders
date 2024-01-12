@@ -1,3 +1,17 @@
-[gd_scene format=3 uid="uid://b77n4v405aj2"]
+[gd_scene load_steps=4 format=3 uid="uid://b77n4v405aj2"]
+
+[ext_resource type="Shader" path="res://2d_shaders/stripe_pattern/stripe_pattern.gdshader" id="1_vvifp"]
+[ext_resource type="Texture2D" uid="uid://hgs31wj17k8a" path="res://icon.svg" id="2_u26xc"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1l27i"]
+shader = ExtResource("1_vvifp")
+shader_parameter/color1 = Vector3(1, 1, 1)
+shader_parameter/color2 = Vector3(1, 0.2, 0.2)
 
 [node name="StripePattern" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_1l27i")
+position = Vector2(409.859, 288.359)
+scale = Vector2(3.98657, 3.99438)
+texture = ExtResource("2_u26xc")
