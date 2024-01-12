@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://cte4tonpvpb8q"]
 
-[ext_resource type="Shader" path="res://fragment_shaders/shader_water.gdshader" id="1_3mjki"]
+[ext_resource type="Shader" path="res://3d_shaders/shader_water.gdshader" id="1_3mjki"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_vjjpa"]
 
