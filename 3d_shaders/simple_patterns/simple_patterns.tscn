@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://day0w3fm4nvh5"]
+
+[ext_resource type="Shader" path="res://3d_shaders/simple_patterns/simple_patterns.gdshader" id="1_j1ci0"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qa11h"]
+render_priority = 0
+shader = ExtResource("1_j1ci0")
+
+[sub_resource type="BoxMesh" id="BoxMesh_7j4oc"]
+material = SubResource("ShaderMaterial_qa11h")
+
+[node name="SimplePatterns" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_7j4oc")
