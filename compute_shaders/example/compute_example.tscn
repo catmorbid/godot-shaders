@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhyd2nuo1e4pu"]
+
+[ext_resource type="Script" path="res://compute_shaders/example/ExampleRenderingDevice.cs" id="1_iys63"]
+
+[node name="ComputeExample" type="Node"]
+script = ExtResource("1_iys63")

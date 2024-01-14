@@ -1,15 +1,31 @@
-[gd_scene load_steps=4 format=3 uid="uid://day0w3fm4nvh5"]
+[gd_scene load_steps=6 format=3 uid="uid://day0w3fm4nvh5"]
 
 [ext_resource type="Shader" path="res://3d_shaders/simple_patterns/simple_patterns.gdshader" id="1_j1ci0"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_qa11h"]
 render_priority = 0
 shader = ExtResource("1_j1ci0")
+shader_parameter/outline_width = 2.8
+shader_parameter/base_color = Color(0, 1, 1, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_7j4oc"]
 material = SubResource("ShaderMaterial_qa11h")
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4okrb"]
+render_priority = 0
+shader = ExtResource("1_j1ci0")
+shader_parameter/outline_width = 2.3
+shader_parameter/base_color = Color(1, 1, 1, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_3jk1t"]
+material = SubResource("ShaderMaterial_4okrb")
+
 [node name="SimplePatterns" type="Node3D"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.978109, 0, 0, 0, 0.978109, 0, 0, 0, 0.978109, 0.0170596, -0.031834, -0.0686693)
 mesh = SubResource("BoxMesh_7j4oc")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.978109, 0, 0, 0, 0.978109, 0, 0, 0, 0.978109, 1.6878, -0.031834, -0.0686693)
+mesh = SubResource("SphereMesh_3jk1t")
